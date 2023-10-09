@@ -12,9 +12,9 @@ public class Program
     {
         var cat = new Cat( "Barnie",3,20);
 
-        Console.WriteLine(cat.Name);
-        Console.WriteLine(cat.Age);
-        Console.WriteLine(cat.Power);
+        Console.WriteLine($"Cat Name: {cat.Name}");
+        Console.WriteLine($"Cat Age: {cat.Age}");
+        Console.WriteLine($"Cat Power: {cat.Power}");
 
         // Укусить.
         cat.Bite();
