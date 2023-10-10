@@ -5,9 +5,9 @@ public class Car
     public string Manufacturer { get; set; }
     public string Model { get; set; }
     public int HorsePowers { get; set; }
-    public float AccelerationTime { get; set; }
+    public double AccelerationTime { get; set; }
 
-    public Car(string manufacturer, string model, int horsePowers, float accelerationTime)
+    public Car(string manufacturer, string model, int horsePowers, double accelerationTime)
     {
         Manufacturer = manufacturer;
         Model = model;

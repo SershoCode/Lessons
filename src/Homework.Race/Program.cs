@@ -1,7 +1,5 @@
 ﻿using Homework.Race;
 
-Console.ReadKey();
-
 ConsoleHelper.Print("Генерируем первую машину...");
 
 var carOne = CarGenerator.Generate();
@@ -15,5 +13,11 @@ ConsoleHelper.Print("Генерируем вторую машину...");
 var carTwo = CarGenerator.Generate();
 
 carTwo.PrintSpecs();
+
+Console.WriteLine("Гонка начинается");
+
+var race = new Race();
+
+race.Start(carOne, carTwo);
 
 Console.ReadKey();

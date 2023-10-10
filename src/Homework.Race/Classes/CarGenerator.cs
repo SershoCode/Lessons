@@ -7,13 +7,13 @@ public static class CarGenerator
 
     public static Car Generate()
     {
-        var manufacturer = Manufacturers.Random(); 
+        var manufacturer = Manufacturers.Random();
 
         var model = Models.Random();
 
         var horsePowers = new Random().Next(80, 350);
 
-        var accelerationTime = (float)new Random().NextDouble() * 15;
+        var accelerationTime = new Random().NextDouble() * 15;
 
         var car = new Car(manufacturer, model, horsePowers, accelerationTime);
 
